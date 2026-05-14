@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sipcalcindia.com/sitemap.xml
+Sitemap: https://sipcalcindia.vercel.app/sitemap.xml
