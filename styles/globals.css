@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg: #0a0f1e;
+  --text: #f8fbff;
+}
+
+.light {
+  color-scheme: light;
+  --bg: #ffffff;
+  --text: #07111f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(0, 212, 255, 0.16), transparent 32rem),
+    radial-gradient(circle at 78% 8%, rgba(124, 58, 237, 0.18), transparent 32rem),
+    var(--bg);
+  color: var(--text);
+  font-family: Inter, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.glass {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.075);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(18px);
+}
+
+.light .glass {
+  border-color: rgba(10, 15, 30, 0.1);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 16px 45px rgba(10, 15, 30, 0.09);
+}
+
+.gradient-border {
+  position: relative;
+  border: 1px solid transparent;
+  background:
+    linear-gradient(var(--bg), var(--bg)) padding-box,
+    linear-gradient(135deg, #00d4ff, #7c3aed, #00ff88) border-box;
+}
+
+.light .gradient-border {
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, #00a9cc, #7c3aed, #00b969) border-box;
+}
+
+.input-range {
+  accent-color: #00d4ff;
+}
+
+.number-font {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.ad-box {
+  border: 1px dashed rgba(0, 212, 255, 0.45);
+  background: rgba(0, 212, 255, 0.06);
+}
+
+.light .ad-box {
+  background: rgba(0, 132, 160, 0.05);
+}
+
+.article-content p {
+  margin: 1rem 0;
+  line-height: 1.8;
+}
+
+.article-content h2 {
+  margin-top: 2rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+.article-content ul {
+  margin: 1rem 0;
+  padding-left: 1.35rem;
+  list-style: disc;
+}
+
+.article-content li {
+  margin: 0.5rem 0;
+}
